@@ -1,3 +1,5 @@
+.tooltip {display:inline;position:relative;}
+
 #s-m-t-tooltip {
     position: relative;
     overflow: hidden;
