@@ -12,8 +12,7 @@
 <link rel="stylesheet" type="text/css" href="css/anim_typing.css"/>  
 <link rel="stylesheet" type="text/css" href="css/smt_tooltip.css"/>  
  
- <script type="text/javascript" src="js/smt_tooltip.js"></script>
- <script type="text/javascript" src="js/nav_script.js"></script>
+<script type="text/javascript" src="js/smt_tooltip.js"></script>
 
 <style>
 
@@ -146,5 +145,22 @@ Song: <a href="https://www.youtube.com/watch?v=r0fb0G3hfjo" target="_blank">Scho
 </div>
 
 <iframe allow="autoplay; encrypted-media;" width="0" height="0" src="https://www.youtube.com/embed/r0fb0G3hfjo?autoplay=1&mute=0&enablejsapi=1;loop=1" frameborder="0" ></iframe>
+ <script>
+ function openQ(evt, qName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("main");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(qName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("redE").click();
+ </script>
 </body>
