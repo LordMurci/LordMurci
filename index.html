@@ -1,7 +1,314 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<title>No Mercy</title>
+<link rel="shortcut icon" href="https://i.imgur.com/efvX9OK.png">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.tumblr.com/7qjmkr5/IUmmdsy41/jquery.style-my-tooltips.js"></script>
+
+<script>
+
+(function($){$(document).ready(function(){$("[title]").style_my_tooltips({ 
+    tip_follows_cursor:true,
+    tip_delay_time:0,
+    tip_fade_speed:300,
+    attribute:"title"
+});});})(jQuery);
+    
+</script>
+
+<style>
+
+body {background: url("");background-color: #000;background-size: cover;background-repeat: no-repeat;
+      font-family: courier;overflow-y: hidden; overflow-x: hidden;}
+
+.tab {position: absolute;left: 50%;transform: translate(-50%, 0);bottom: 25px;border:1px solid white;}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 12px;
+  color: white;
+}
+
+.tab button:hover {background-color: rgba(0, 0, 0, 0.6);}
+.tab button.active {background: url(https://wallpaperset.com/w/full/8/8/9/354096.jpg);background-size: cover;background-repeat: no-repeat;}
+
+.main {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+    position: relative;
+    margin-top: 150px;
+    padding: 10px;
+    /*
+    box-shadow: 0px 10px 500px 250px #F93D3D;
+    -webkit-animation: strobe 12s linear infinite;
+    */
+    animation: strobe 10s linear infinite;
+    background: url(https://wallpaperset.com/w/full/8/8/9/354096.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.main p {font-size: 12px;}
+.main a {color: white;}
+
+/*
+@-webkit-keyframes strobe {
+  12.5% {	box-shadow: 0px 10px 500px 250px #F77A7A; }
+  25% {  box-shadow: 0px 10px 500px 250px #FA8834; }
+  37.5% {  box-shadow: 0px 10px 500px 250px #F7ED22; }
+  50% {  box-shadow: 0px 10px 500px 250px #77F722; }
+  62.5% {  box-shadow: 0px 10px 500px 250px #2292F7; }
+  75% {  box-shadow: 0px 10px 500px 250px #8022F7; }
+  87.5% { box-shadow: 0px 10px 500px 250px #C022F7; }
+  100% { box-shadow: 0px 10px 500px 250px #F93D3D; }
+}
+
+
+@keyframes strobe {
+  12.5% {	box-shadow: 0px 10px 500px 250px #F77A7A; }
+  25% {  box-shadow: 0px 10px 500px 250px #FA8834; }
+  37.5% {  box-shadow: 0px 10px 500px 250px #F7ED22; }
+  50% {  box-shadow: 0px 10px 500px 250px #77F722; }
+  62.5% {  box-shadow: 0px 10px 500px 250px #2292F7; }
+  75% {  box-shadow: 0px 10px 500px 250px #8022F7; }
+  87.5% { box-shadow: 0px 10px 500px 250px #C022F7; }
+  100% { box-shadow: 0px 10px 500px 250px #F93D3D; }
+}
+*/
+
+#ppl a {text-decoration: none;border-bottom: 1px solid white;color: white;}
+
+#ppl a:hover {cursor: default, auto !important;}
+
+h3 , h5 {font-weight: lighter;}
+
+.tooltip {display:inline;position:relative;}
+
+#s-m-t-tooltip {
+    position: relative;
+    overflow: hidden;
+    z-index: 99999;
+    max-width: 120px;
+    margin: 0px 20px 20px 35px;
+    padding: 6px 6px 6px 6px;
+    font-family: courier;
+    background: black;
+    border: 0px solid black;
+    border-radius: 0px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 10px;
+}
+
+::selection {display: none}
+::-webkit-selection {display: none}
+::-o-selection {display: none}
+::-ms-selection {display: none}
+
+.himg {
+    cursor: pointer;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    border: 1px solid white;
+    border-radius: 150px;
+    height: 120px;
+    width: 120px;
+    margin: 25px 0px 10px 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+@-webkit-keyframes spin {0% { -webkit-transform: rotateY(0deg); }100% { -webkit-transform: rotateY(360deg); }}
+@keyframes spin { 0% { transform: rotateY(0deg); }100% { transform: rotateY(360deg); }}
+
+.quote {
+    height: 30px; 
+    position: absolute; 
+    top: 5px; 
+    right: 5px;
+    margin-bottom: -55px;
+    border-radius: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255,255,255,0.8);
+    animation: spin2 10s linear infinite;
+}
+
+.quote:hover {/*animation-play-state: paused;*/cursor: pointer;}
+@keyframes spin2 {0% { transform: rotateZ(0deg); }100% { transform: rotateZ(360deg); }}
+@-webkit-keyframes spin2 {0% { -webkit-transform: rotateZ(0deg); }100% { -webkit-transform: rotateZ(360deg); }}
+
+.pop{
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    top: -75px;
+    height: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.pop a {
+    color: white;
+}
+ 
+#xexe:hover .pop{height: auto; border: 1px solid white; padding: 10px;}
+
+:root {
+    --anim-t: 3s;
+}
+
+.typing {
+    width: 35ch;
+    animation: typing-anim var(--anim-t) steps(40);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+@keyframes typing-anim {from {width: 0;}}
+
+
+.typing2 {
+    width: 0ch;
+    animation: typing-anim-2 var(--anim-t) steps(40);
+    white-space: nowrap;
+    overflow: hidden;
+    animation-delay: var(--anim-t);
+    animation-fill-mode: forwards;
+    font-size: 14px;
+
+}
+
+@keyframes typing-anim-2 {from {width: 0ch;}to{width: 35ch;}}
+
+/*
+#ball {position: absolute;box-shadow: 0px 10px 400px 50px #F93D3D;}
+.topleft {top: 10px;left: 10px;animation: strobe 8s linear infinite;}
+.topright {top: 10px;right: 10px;animation: strobe 8s linear infinite;}
+.botleft {bottom: 10px;left:10px;animation: strobe 8s linear infinite;}
+.botright {bottom: 10px;right:10px;animation: strobe 8s linear infinite;}
+*/
+
+body > iframe:first-child { display: none !important; }
+</style>
+</head>
+<body onload="window.resizeTo(750,750)">
+
+<div class="main" id="Home">
+
+<h3 style="margin-top: 35px; text-shadow: 2px 0 .2px #FF0000, -2px 0 .2px #00F1F5;"><center>Mercy</center></h3>
+<img src="https://i.imgur.com/ByLMChq.jpg" style="height: 120px; margin-top: -6px;" class="himg" title="I'm in your sink!">
+<br>
+<br>
+
+<center>
+<font style="text-shadow: 2px 0 .2px #FF0000, -2px 0 .2px #00F1F5;">
+
+<div class="typing">
+all that glitters is not gold,
+</div>
+
+<div class="typing2">
+but it's still damn beautiful 
+</div>
+
+</font>
+</center>
+
+<div id="xexe">
+<img src="https://i.imgur.com/8AK6pN4.png" title="Take a breath ♥" class="quote">
+<div class="pop">
+<font class="text">
+Song: <a href="https://www.youtube.com/watch?v=r0fb0G3hfjo" target="_blank">Schoolin' by Everything Everything</a>
+</font>
+</div>
+</div>
+
+</div>
+
+
+<div class="main" id="About">
+
+<h3 style="margin-top: 15px; text-shadow: 2px 0 .2px #FF0000, -2px 0 .2px #00F1F5;"><center>Hello!</center></h3>
+
+<p>Hi! you can call me Murci, Mercy, Merc, or whatever you feel like honestly</p>
+
+<p>I'm 18, nonbinary and happily taken :)</p>
+
+<p>I haven't been on chats for too long but I do know a little bit</p>
+
+<p>My hobbies mostly include modding or making mods for various games, including Skyrim, a couple of the Fallout titles and Minecraft</p>
+
+</div>
+
+<div class="main" id="Help">
+
+<h3 style="margin-top: 15px; text-shadow: 2px 0 .2px #FF0000, -2px 0 .2px #00F1F5;"><center>Codes!</center></h3>
+
+<p>Here's a list of some resources I used to help create this sniff</p>
+<h3>
+<a href="https://www.w3schools.com/css/default.asp" title="https://www.w3schools.com/css/default.asp" target="_blank">w3Schools</a>    </h3>
+<h3>
+<a href="https://stackoverflow.com/" title="https://stackoverflow.com/" target="_blank">StackOverflow</a>
+</h3>
+<p>I may not be the best at coding but I know a little bit and will gladly help when asked!</p>
+</div>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openQ(event, 'About')">About</button>
+  <button class="tablinks" onclick="openQ(event, 'Home')" id="redE">Home</button>
+  <button class="tablinks" onclick="openQ(event, 'Help')">Codes</button>
+</div>
+
+<!---
+<div class="topleft" id="ball"></div>
+<div class="topright" id="ball"></div>
+<div class="botleft" id="ball"></div>
+<div class="botright" id="ball"></div>
+--->
+
+<iframe allow="autoplay; encrypted-media;" width="0" height="0" src="https://www.youtube.com/embed/r0fb0G3hfjo?autoplay=1&mute=0&enablejsapi=1;loop=1" frameborder="0" ></iframe>
+
+<script>
+function openQ(evt, qName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("main");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(qName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("redE").click();
+</script>
+
 </body>
-</html>
