@@ -1,0 +1,17 @@
+
+.tab {position: absolute;left: 50%;transform: translate(-50%, 0);bottom: 25px;border:1px solid white;}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 12px;
+  color: white;
+}
+
+.tab button:hover {background-color: rgba(0, 0, 0, 0.6);}
+.tab button.active {background: url(https://wallpaperset.com/w/full/8/8/9/354096.jpg);background-size: cover;background-repeat: no-repeat;}
