@@ -1,0 +1,18 @@
+.tooltip {display:inline;position:relative;}
+
+#s-m-t-tooltip {
+    position: relative;
+    overflow: hidden;
+    z-index: 99999;
+    max-width: 120px;
+    margin: 0px 20px 20px 35px;
+    padding: 6px 6px 6px 6px;
+    font-family: courier;
+    background: black;
+    border: 0px solid black;
+    border-radius: 0px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 10px;
+}
