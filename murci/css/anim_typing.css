@@ -1,0 +1,27 @@
+:root {
+    --anim-t: 3s;
+}
+
+.typing {
+    width: 35ch;
+    animation: typing-anim var(--anim-t) steps(40);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+@keyframes typing-anim {from {width: 0;}}
+
+
+.typing2 {
+    width: 0ch;
+    animation: typing-anim-2 var(--anim-t) steps(40);
+    white-space: nowrap;
+    overflow: hidden;
+    animation-delay: var(--anim-t);
+    animation-fill-mode: forwards;
+    font-size: 14px;
+
+}
+
+@keyframes typing-anim-2 {from {width: 0ch;}to{width: 35ch;}}
