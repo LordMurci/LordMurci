@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<title>RATLORD</title>
+<link rel="shortcut icon" href="img/coffeeee.png">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.tumblr.com/7qjmkr5/IUmmdsy41/jquery.style-my-tooltips.js"></script>
+<script type="text/javascript" src="js/smt_script.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/main.css"/>  
+    
+</head>
+<body>
+  
+<div class="main" id="Help" style="display:none;">
+<h3 style="margin-top: 15px; text-shadow: 2px 0 .2px #FF0000, -2px 0 .2px #00F1F5;"><center>Codes!</center></h3>
+<p>Here's a list of some resources I used to help create this sniff</p>
+<h3>
+<a href="https://www.w3schools.com/css/default.asp" title="https://www.w3schools.com/css/default.asp" target="_blank">w3Schools</a>    </h3>
+<h3>
+<a href="https://stackoverflow.com/" title="https://stackoverflow.com/" target="_blank">StackOverflow</a>
+</h3>
+<p>I may not be the best at coding but I know a little bit and will gladly help when asked!</p>
+</div>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="location.href='about.html'">About</button>
+  <button class="tablinks" onclick="location.href='index.html'">Home</button>
+  <button class="tablinks" onclick="location.href='yeah.html'" id="act">Source</button>
+</div>
+
+<iframe allow="autoplay; encrypted-media;" width="0" height="0" src="https://www.youtube.com/embed/r0fb0G3hfjo?autoplay=1&mute=0&enablejsapi=1;loop=1" frameborder="0" ></iframe>
+
+<script>
+  function setActive(i) {
+    $('#'+i).addClass("active");
+  }
+  $(document).ready(function(){
+      setActive("act");
+  });
+</script>
+    
+</body>
