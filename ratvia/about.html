@@ -39,8 +39,8 @@
 </div>
 
 <div class="tab">
-  <button class="tablinks" onclick="openQ(event, 'About')">About</button>
-  <button class="tablinks" onclick="location.href='index.html';">Home</button>
+  <button class="tablinks" onclick="location.href='about.html'" id="act">About</button>
+  <button class="tablinks" onclick="location.href='index.html'">Home</button>
   <button class="tablinks" onclick="openQ(event, 'Help')">Codes</button>
 </div>
 
@@ -52,5 +52,9 @@
 <div class="botright" id="ball"></div>
 --->
 
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("act").click();
+</script>
 
 </body>
