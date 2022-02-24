@@ -1,0 +1,9 @@
+:root {--anim-t: 3s;}
+.typing {width: 35ch;animation: typing-anim var(--anim-t) steps(40);white-space: nowrap;overflow: hidden;font-size: 14px;}
+@keyframes typing-anim {from {width: 0;}}
+.typing2 {width: 0ch;animation: typing-anim-2 var(--anim-t) steps(40);white-space: nowrap;overflow: hidden;animation-delay: 2s;animation-fill-mode: forwards;font-size: 14px;}
+@keyframes typing-anim-2 {from {width: 0ch;}to{width: 35ch;}}
+.typing3 {width: 0ch;animation: typing-anim-3 var(--anim-t) steps(40);white-space: nowrap;overflow: hidden;animation-delay: calc(var(--anim-t)*1.3);animation-fill-mode: forwards;font-size: 14px;}
+@keyframes typing-anim-3 {from {width: 0ch;}to{width: 35ch;}}
+.typing4 {width: 0ch;animation: typing-anim-4 var(--anim-t) steps(40);white-space: nowrap;overflow: hidden;animation-delay: calc(var(--anim-t)*2.2);animation-fill-mode: forwards;font-size: 14px;}
+@keyframes typing-anim-4 {from {width: 0ch;}to{width: 35ch;}}
